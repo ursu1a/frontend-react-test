@@ -1,0 +1,36 @@
+.date-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  .date-inputs-wrapper {
+    display: flex;
+    width: 100%;
+
+    .date-input-field {
+      input {
+        text-align: center;
+        padding: 14px 0;
+      }
+
+      fieldset {
+        border-radius: 0;
+      }
+
+      &:first-child {
+        fieldset {
+          border-top-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+        }
+      }
+
+      &:last-child {
+        fieldset {
+          border-top-right-radius: 3px;
+          border-bottom-right-radius: 3px;
+        }
+      }
+    }
+  }
+}

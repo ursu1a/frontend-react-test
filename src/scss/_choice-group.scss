@@ -1,0 +1,47 @@
+.choice-group {
+
+  display: flex;
+  width: 100%;
+
+  .choice-item {
+    display: flex;
+    justify-content: center;
+    width: 33.3333%;
+    border: 1px solid rgba(0,0,0,0.23);
+    padding: 14px 5px;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    + .choice-item {
+      border-left: none;
+    }
+
+    span {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &:hover {
+      border: 1px solid #000000;
+    }
+
+    &.selected {
+      background-color: $_BLUE;
+      border-color: $_BLUE;
+      color: white;
+      font-weight: bold;
+    }
+
+    &:first-child {
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+    }
+
+    &:last-child {
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
+  }
+}
